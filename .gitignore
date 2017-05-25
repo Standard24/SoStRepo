@@ -13,7 +13,7 @@
 *.synctex.gz
 *.pydevproject
 *.gz(busy)
-evaluation
+*.nb
 *.log
 *.aux
 *.out
