@@ -1,0 +1,18 @@
+bei gelber PI:
+Messung mit kleinem power head
+grün dabei bei kleinen Strömen
+
+rot3: kleiner head
+
+littrow rote linie
+an ab 0°
+max: 20°, dann stärler und schwächer
+aus ab 80°
+an bei 180°
+max: 200° wird stärker und schwächer bis 260°, hört auf, fängt an bei 0°
+
+dunkelrote linie
+an ab 270° bis 0°
+max: 315°
+an ab 80° bis 170°
+max bei 110°

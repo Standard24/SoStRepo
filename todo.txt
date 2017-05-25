@@ -1,0 +1,2 @@
+abbildungen mit fehlerbalken
+fits mit fehlern + quiquadrate

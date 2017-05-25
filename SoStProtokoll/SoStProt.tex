@@ -1,0 +1,145 @@
+\documentclass[12pt, a4paper]{scrartcl}
+
+% CONFIG
+\newcommand{\exptitle}{Pr:YLF Laser}  	    % long name of experiment
+\newcommand{\exptitleshort}{Pr:YLF Laser}				 	% short name of experiment
+\newcommand{\expdate}{22. und 23. Mai 2017} 				% date of experiment
+\newcommand{\exptutor}{Dr. Katrin \textsc{Dulitz}}
+
+% PACKAGES + MODIFICATIONS
+\usepackage[german]{babel} %standard language stuff
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textgreek}
+
+\usepackage[fleqn]{amsmath}  % math
+\usepackage{amssymb}
+
+\usepackage{graphicx} %graphics
+\usepackage{float} 
+\graphicspath{{img/}}
+\usepackage{subfig}
+
+\usepackage[section]{placeins}			% keep figures in section
+
+\usepackage[automark,headsepline]{scrlayer-scrpage} %headings
+\pagestyle{scrheadings}
+\ihead{\exptitleshort}
+\ohead{\pagemark}
+\cfoot{}
+
+\usepackage{hyperref}
+\hypersetup{
+    unicode=true,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,       % show Acrobat’s toolbar?
+    pdfmenubar=true,       % show Acrobat’s menu?
+    pdffitwindow=false,    % window fit to page when opened
+    pdfstartview={FitH},   % fits the width of the page to the window
+    pdfnewwindow=true,     % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=blue,        % color of internal links (change box color with linkbordercolor)
+    citecolor=green,       % color of links to bibliography
+    filecolor=magenta,     % color of file links
+    urlcolor=blue          % color of external links
+}
+
+\usepackage[labelfont=bf]{caption} % bold captions
+
+%\usepackage{chngcntr} % change behaviour of counters in different environments
+%\counterwithin{figure}{section}  % number figures per section
+%\numberwithin{equation}{section} % number equations per section
+%\numberwithin{table}{section}    % number tables per section
+
+\usepackage{enumerate} % better way to config enumerates
+
+\setcounter{tocdepth}{2} % table of contents depth
+
+\setlength{\parindent}{0pt} % no indent on new paragraph
+
+\usepackage{pdfpages} % include pdf files
+
+\usepackage{pdflscape} % landscape mode
+
+% call Abschnitt and Unterabschnitt Kapitel with \autoref-command
+%\addto\extrasngerman{
+% \renewcommand{\sectionautorefname}{Kapitel}
+% \renewcommand{\subsectionautorefname}{Kapitel}
+% \renewcommand{\subsubsectionautorefname}{Kapitel}
+%}
+
+
+%%%%%
+% Alter some LaTeX defaults for better treatment of figures:
+    % See p.105 of "TeX Unbound" for suggested values.
+    % See pp. 199-200 of Lamport's "LaTeX" book for details.
+    %   General parameters, for ALL pages:
+    \renewcommand{\topfraction}{0.9}	% max fraction of floats at top
+    \renewcommand{\bottomfraction}{0.8}	% max fraction of floats at bottom
+    %   Parameters for TEXT pages (not float pages):
+    \setcounter{topnumber}{2}
+    \setcounter{bottomnumber}{2}
+    \setcounter{totalnumber}{4}     % 2 may work better
+    \setcounter{dbltopnumber}{2}    % for 2-column pages
+    \renewcommand{\dbltopfraction}{0.9}	% fit big float above 2-col. text
+    \renewcommand{\textfraction}{0.07}	% allow minimal text w. figs
+    %   Parameters for FLOAT pages (not text pages):
+    \renewcommand{\floatpagefraction}{0.7}	% require fuller float pages
+	% N.B.: floatpagefraction MUST be less than topfraction !!
+    \renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
+%%%%
+
+
+% NEW COMMANDS
+%\newcommand{\abs}[1]{\left|#1\right|}
+%\newcommand{\rb}[1]{$^{#1}$Rb}
+%\newcommand{\difd}{\mathrm{d}}
+%\DeclareMathOperator{\gaus}{gaus}
+%\DeclareMathOperator{\cor}{cor}
+
+% DOCUMENT SETTINGS
+
+\title{\exptitle}
+\subtitle{Master Laboratory Applied Physics}
+%\author{Moritz Bitterling und Benjamin Rottler \\ Universität Freiburg}
+\date{\expdate}
+
+% DOCUMENT
+\begin{document}
+
+\hypersetup{pageanchor=false} %stop page numbering (hyperref) to prevent for double page numers
+\input{titlepage}
+\thispagestyle{empty}
+
+
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+\hypersetup{pageanchor=true} %start page numbering again
+\setcounter{page}{1} %set to page 1
+
+\input{01_Einleitung} 
+\input{02_Grundlagen}
+\input{03_1_Charakterisierung}
+\input{04_Diskussion}
+%\input{06_conclusion}
+
+
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{refs}
+
+%\newpage
+%\appendix
+%\section{Appendix}
+
+%\subsection{Measurement data of the thermocouple}
+
+
+
+%\clearpage
+%\includepdf[pages={-}, pagecommand=\subsection{Lab log}]{../img/LabLog.pdf}
+
+\end{document}
