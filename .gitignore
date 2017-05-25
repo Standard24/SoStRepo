@@ -14,7 +14,10 @@
 *.pydevproject
 *.gz(busy)
 evaluation
-
+*.log
+*.aux
+*.out
+*.toc
 .project
 .texlipse
 
