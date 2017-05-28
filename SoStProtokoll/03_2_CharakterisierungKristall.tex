@@ -12,7 +12,7 @@ Die Lage der Absorptionsmaxima ist eingezeichnet und in Tab.~ \ref{tab:AbsSpec} 
 \begin{figure}[H]
 \begin{center}
   \includegraphics[width=\textwidth]{AbsSpec.pdf}
-  \caption{Absorptionsspektrum des Pr:YLF-Kristalls und Position der Maxima.}
+  \caption{Absorptionsspektrum des Pr:YLF-Kristalls und Position der deutlichen Maxima.}
   \label{img:AbsSpec}
 \end{center}
 \end{figure}
@@ -37,7 +37,7 @@ blablabla
 \begin{figure}[H]
 \begin{center}
   \includegraphics[width=\textwidth]{EmSpec.pdf}
-  \caption{Emissionsspektrum des Pr:YLF-Kristalls und Position der Maxima.}
+  \caption{Emissionsspektrum des Pr:YLF-Kristalls und Position der deutlichen Maxima.}
   \label{img:EmSpec}
 \end{center}
 \end{figure}
@@ -57,12 +57,59 @@ Pr:YLF-Kristalls.}
 
 \paragraph{Aufbau und Durchführung}
 
-\paragraph{Auswertung}
+blabla
 
+\paragraph{Auswertung}
+Abb.~\ref{img:Lifetime} zeigt die Modulation der Laserspannung während der Messung und das
+dazugehörige Fluoreszenzsignal, das von der Photodiode geliefert wird.
+Das Photodiodensignal eines einzelnen Abschaltvorgangs ist auf Abb.~\ref{img:LifetimeFit} zu sehen. 
+Als Fehler auf die Diodenspannung wird von der Spannungsauflösung des Oszilloskops
+(0,2\,mV) ausgegangen und diese - unter Annahme einer Gleichverteilung der Fehler - durch
+$2\sqrt{3}$ geteilt.
+Der Fit des Signals erfolgt mit einer exponentiellen Abnahme mit Zeitkonstante~$\tau$ und
+Untergrund~$U$. Das Fitergebnis ist auf Tab.~\ref{tab:Fit_lifetime} zu sehen.
+
+
+\begin{figure}[H]
+\begin{center}
+  \includegraphics[width=.7\textwidth]{lifetime.png}
+  \caption{Modulation des Lasers mit einem Rechtecksignal (gelb) zur Bestimmung der Lebensdauer der
+  Fluoreszenz (blau, Messung als Spannungssignal der Photodiode).}
+  \label{img:Lifetime}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+  \includegraphics[width=.9\textwidth]{lifetime.pdf}
+  \caption{Exponentieller Fit des Spannungssignals der Photodiode $U_{\text{PD}}$ zur Bestimmung der
+  Lebenszeit des angeregten Zustands. Der Fitbereich ist gelb markiert, auf die Darstellung der geringen Fehler
+  wurde verzichtet.}
+  \label{img:LifetimeFit}
+\end{center}
+\end{figure}
+
+\begin{table}[htb]
+\caption{Ergebnisse des Fits der Fluoreszenzlebensdauer mit
+$y=A\,\exp(-x/\tau)\,+\,U$.}
+\input{src/tab_Fit_lifetime}
+\label{tab:Fit_lifetime}
+\end{table}
 
 
 \subsubsection{Messung der absorbierten Leistung}
 
 \paragraph{Aufbau und Durchführung}
+blabla
 
 \paragraph{Auswertung}
+blabla
+ 
+\begin{table}[htb]
+\caption{Leistung am Leistungsmesskopf ohne Kristall im Strahlengang ($P_\text{ohne}$),
+mit Kristall ($P_\text{mit}$), absorbierte Leistung ($P_\text{abs}$) und relative Absorption
+$P_\text{abs}/P_\text{ohne}$ in Abhängigkeit von Lasertemperatur $T$ und Laserstrom $I$.}
+\input{src/tab_Absorption}
+\label{tab:Absorption}
+\end{table}
