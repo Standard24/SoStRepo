@@ -7,6 +7,25 @@
 \subsubsection{Aufnahme der Kennlinien}
 
 
+\begin{figure}[H]
+\begin{center}
+  \includegraphics[width=\textwidth]{PI_rot.pdf}
+  \caption{PI-Kennlinie des roten Lasers bei 25\grad und 35\grad
+  Betriebstemperatur. Der modulationsfreie Bereich wurde mit $y=a(x-b)$
+  gefittet, um die Laserschwelle~$b$ und die Effizienz~$a$ zu bestimmen.}
+  \label{img:PI_rot}
+\end{center}
+\end{figure}
+
+
+\begin{table}[htb]
+\caption{Ergebnisse der Fits der PI-Kennlinien roten Lasers mit $y=a(x-b)$ von 200\,mA bis
+700\,mA Laserstrom.}
+\input{src/tab_Fits_PI_rot}
+\label{tab:Fits_PI_rot}
+\end{table}
+
+\FloatBarrier
 
 \subsubsection{Messung der Laserleistung mit Photodiode}
 
@@ -16,3 +35,12 @@
 
 
 \subsubsection{Messung des dynamischen Verhaltens}
+
+\begin{figure}[H]
+\begin{center}
+  \includegraphics[width=.7\textwidth]{LaserEinschwingvorgang.png}
+  \caption{Photodiodenspannung (blau) nach Einschalten der Laserspannung (gelb).
+  Ein dynamisches Einschwingen der Laserintensität ist erkennbar.}
+  \label{img:Einschwingen}
+\end{center}
+\end{figure}
