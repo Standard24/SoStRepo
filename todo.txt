@@ -1,2 +1,11 @@
-abbildungen mit fehlerbalken
-fits mit fehlern + quiquadrate
+
+
+photodiode auswertung und vergleich + Disk
+
+moden bilder einfügen + Disk
+
+dynamisches verhalten + Disk
+
+Selektion über Reflektivität der Spiegel - Auswertung + Disk
+Selektion über doppelbrechenden Kristall - Auswertung + Disk
+Selektion mit Littrow-Prisma - Auswertung + Disk
