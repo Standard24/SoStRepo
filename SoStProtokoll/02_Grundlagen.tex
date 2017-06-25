@@ -2,19 +2,36 @@
 
 \subsection{Funktionsweise eines Lasers}
 
-1. Describe the general working principles of a laser. In your answer, explain both the fundamental
-physical background and the optical arrangement. If several laser transitions are possible, which
-criteria determine the actual output wavelength?
+
+Der Laser stellt eines der wichtigsten Werkzeuge der Experimentalphysik dar. Es gibt viele verschiedene Arten von Lasern, die grundsätzliche Funktionsweise ist jedoch immer ähnlich. Man benötigt zunächst ein aktives Medium in dem optische Übergänge stattfinden die zum emittieren von Photonen führen. Außerdem benötigt man eine optische Pumpe, die eine Besetzungsinversion im Medium erzeugt, wodurch sich mehr Atome im Zustand höherer Energie befinden. Dazu benötigt man mindestens drei Zustände, einen Grundzustand von dem aus die Elektronen in einen ersten angeregten Zustand gepumpt werden welcher mit möglichst kurzer Lebensdauer in einen weiteren angeregten Zustand etwas niedriger Energie fällt, der eine möglichst lange Lebensdauer besitzt. Dies verhindert, dass die Photonen des Laserlichts nicht direkt wieder absorbiert werden und Atome im niedrigen Zustand anheben. Zusätzlich benötigt man einen Resonator der Photonen mit einer bestimmten Energie und Impuls in den Laser zurückkoppelt. Diese Photonen regen dann Atome dazu an in den niedrigeren Zustand zu fallen und dabei ein Photon mit gleicher Energie und Impuls zu emittieren. Das führt zu dem gewollten monochromatischen und kohärenten Licht.
+Wenn mehrere verschiedene Übergänge zur Verfügung stehen wird die Wellenlänge des Lasers durch die minimalsten Verluste, sowie die Wirkungsquerschnitte der Übergänge bestimmt. Die Verluste sind hierbei vor allem vom Resonator beeinflusst zum Beispiel über die Reflektivität der Spiegel.
+
+
 
 \subsection{Stabilitätskriterium des Resonators}
 
-5. What are the stability conditions of a cavity? To determine the stability range of the concentric
-cavity used for second harmonic generation (Sec. 2.3.3), make a plot of g 1 g 2 (see Eq. 2.3.3) as a
-function of the mirror spacing L. In your calculation, assume a concentric cavity which consists of
-a spherical mirror (R 1 = 100 mm) and a spherical mirror (R 2 = 150 mm). Compare these results
-to the stability curve of a hemispherical cavity consisting of a spherical mirror (R 1 = 100 mm) and
-a flat mirror.
 
+Ein Resonator ist stabil, wenn ein Strahl auch nach beliebig vielen Reflexionen den Resonator nicht verlässt. 
+Mit Hilfe von Matrizenoptik lässt sich dafür das Stabilitätskriterium eines Resonators
+ableiten:
+
+\begin{equation}
+0\leq g_1 \cdot g_2 \leq 1
+\end{equation}
+
+wobei $g_1=(1-\frac{L}{R_1})$ und $g_2=(1-\frac{L}{R_2})$ mit den Krümmungsradien der Spiegel $R_{1/2}$ und dem Abstand der Spiegel L. In diesem Versuch verwenden wir hauptsächlich einen hemisphärischen Resonator mit einem Spiegel mit einem Krümmungsradius
+von 100\,mm, für die Frequenzverdopplung wird jedoch ein sphärischer Resonator benötigt mit 
+einem zweiten Spiegel mit einem Krümmungsradius von 150\,mm.
+In Abb.~\ref{img:stabkrit} sind die Verläufe von $g_1 \cdot g_2$ als Funktion des Abstands der Spiegel dargestellt. Daraus ergibt sich für den hemisphärischen Resonator ein stabiler Zustand für einen Abstand bis 100\,mm und für den sphärischen Resonator zusätzlich von 150\,mm bis 250\,mm.
+
+\begin{figure}[H]
+\begin{center}
+  \includegraphics[width=.7\textwidth]{Schutzbrillen.png}
+  \caption{Absorptions- (blau)  und Transmissionsspektrum (rot) der im Versuch
+  verwendeten Laserschutzbrillen \cite{Versuchsanleitung}.}
+  \label{img:stabkrit}
+\end{center}
+\end{figure}
 
 
 \subsection{Eigenschaften des Pr:YLF-Lasers}
