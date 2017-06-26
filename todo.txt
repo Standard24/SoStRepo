@@ -2,8 +2,6 @@
 
 photodiode auswertung und vergleich + Disk
 
-moden bilder einfügen + Disk
-
 dynamisches verhalten + Disk
 
 Selektion über Reflektivität der Spiegel - Auswertung + Disk
