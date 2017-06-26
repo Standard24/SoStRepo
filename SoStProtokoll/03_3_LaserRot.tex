@@ -60,6 +60,19 @@ modulierten Betrieb des Pumplasers bei 710\,mA und 25\grad aufgenommen. Das Sign
 
 \subsubsection{Messung der Laserleistung mit Photodiode}
 
+Nach Einbau des Photodetektors wurde mit dem Oszilloskop über 2.6\,ms die Spannung $U_\text{m}$
+gemittelt, die von dem Photostrom über dem 1\,k$\Omega$-Widerstand $R_\text{L}$ abfällt.
+Der Messwert hierfür beträgt 39.62\,mV.
+Die Leistung $P_{\text{opt}}$ beträgt mit der spektralen Empfindlichkeit der Photodiode $S(\lambda
+= 850\,\text{nm}) = 0.62\,\text{A/W}$ und der relativen Empfindlichkeit
+$S_\text{rel}(640\,\text{nm}) = 0.68$ \cite{Versuchsanleitung}
+\begin{equation*}
+P_{\text{opt}} = \frac{U_\text{m}}{R_\text{L} \cdot S(\lambda = 850\,\text{nm}) \cdot S_\text{rel}}=
+\frac{39.62\,\text{mV}}{1\,\text{k}\Omega \cdot 0.62\,\text{mA/mW} \cdot 0.68}=
+94\,\text{\textmu W}.
+\label{eq:pphot}
+\end{equation*}
+Bei der Referenzmessung mit dem Leistungsmesskopf wurde ein Wert von 161\,\textmu W gemessen.
 
 
 \subsubsection{Erzeugung verschiedener Moden}
@@ -82,8 +95,11 @@ wurden: 01, 02, 03, 05, 06 und 11.
 \begin{figure}[H]
 \begin{center}
   \includegraphics[width=.7\textwidth]{LaserEinschwingvorgang.png}
-  \caption{Photodiodenspannung (blau) nach Einschalten der Laserspannung (gelb).
-  Ein dynamisches Einschwingen der Laserintensität ist erkennbar.}
+  \caption{Photodiodensignal (blau) nach Einschalten der Laserspannung (gelb).}
   \label{img:Einschwingen}
 \end{center}
 \end{figure}
+
+Abb.~\ref{img:Einschwingen} zeigt das Verhalten des Lasers nach Einschalten des Laserstroms.
+Ein dynamisches Einschwingen der Intensität auf ein konstantes Niveau ist erkennbar.
+

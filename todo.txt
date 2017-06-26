@@ -1,9 +1,5 @@
 
 
-photodiode auswertung und vergleich + Disk
-
-dynamisches verhalten + Disk
-
 Selektion über Reflektivität der Spiegel - Auswertung + Disk
 Selektion über doppelbrechenden Kristall - Auswertung + Disk
 Selektion mit Littrow-Prisma - Auswertung + Disk
