@@ -55,9 +55,15 @@ einen Abstand bis 100\,mm und für den sphärischen Resonator zusätzlich von 15
 
 \subsection{Eigenschaften des Pr:YLF-Lasers}
 
-2. What are the specific characteristics of a Pr:YLF laser, i.e., why is it interesting to use a Pr:YLF
-laser compared to other solid state lasers? In your answer, also make a comparison of the Pr:YLF
-laser with the ruby laser and the Nd:YAG laser.
+
+In diesem Versuch verwenden wir als aktives Lasermedium das Praseodym (Pr$^{3+}$), welches in
+einen Yttrium- Lithium- Fluorid (YLF) Kristall eingebettet ist. Das Energieschema ist in Abb.~\ref{img:Termschema} zu sehen und entspricht einem vier Niveau System. 
+Vom Grundzustand $^3$H$_4$ aus wird mit einer Wellenlänge von 444\,nm in den ersten angeregten Zustand $^3$P$_2$ gepumpt. Dieser zerfällt mit einer kurzen Lebensdauer ohne Aussendung von Strahlung in die Zustände $^3$P$_1$ und $^3$P$_0$ welche eine deutlich längere Lebensdauer besitzen und als zweite angeregte Zustände die Ausgangszustände des Laserlichts sind. Von dort findet nun stimulierte Emission hauptsächlich in die Zustände $^{3}$F$_{4,3,2}$ und $^3$H$_{6,5}$ statt. Diese Zustände zerfallen schlussendlich wiederum mit einer kurzen Lebensdauer ohne Aussendung von Strahlung in den Anfangszustand $^3$H$_4$.
+
+Die Vorteile der Verwendung von Praseodym liegen hauptsächlich in der Vielzahl unterschiedlicher Laserlinien und der Tatsache, dass diese im sichtbaren Spektralbereich liegen. Der sehr weit verbreitete Nd:YAG Festkörperlaser emittiert im Vergleich dazu lediglich im infraroten Bereich hauptsächlich bei 1064\,nm. Dadurch ist auch das erzeugen von UV-Strahlung deutlich einfacher, da hier die Frequenz lediglich verdoppelt werden muss anstatt verdreifacht wie beim Nd:YAG Laser.
+Außerdem ist ein großer Vorteil gegenüber zum Beispiel dem Rubinlaser das Vorhandensein eines 4 Niveau Systems anstatt eines 3 Niveau Systems, wodurch eine Besetzungsinversion schon bei einer geringen Pumpleistung gegeben ist. 
+Seit blaue Diodenlaser mit einer Wellenlänge von 444\,nm und Leistungen bis 2\,W verfügbar sind wurde auch das Pumpen des Pr:YLF Kristalls deutlich erleichtert.
+
 
 \begin{figure}[H]
 \begin{center}
@@ -71,13 +77,43 @@ laser with the ruby laser and the Nd:YAG laser.
 \subsection{Wellenlängenselektion}
 
 
-3. Compare the working principles of a birefringent tuner with those of a Littrow prism.
+Im Pr:YLF Kristall stehen verschiedene Übergänge mit unterschiedlichen Wellenlängen im sichtbaren
+Spektralbereich für Laserlicht zur Verfügung.
+Wir möchten in diesem Versuch die Wellenlänge des Lasers selektieren.
+Wie bereits in den Lasergrundlagen erwähnt wird die Ausgangswellenlänge des Lasers hauptsächlich über die mimimalsten Verluste bestimmt. Deshalb werden wir zunächst verschiedene Wellenlängen
+ mithilfe unterschiedlicher Resonatorspiegel mit Reflektivitäten im jeweiligen Wellenlängenbereich
+ auswählen.
+Weitere elegantere Möglichkeiten zur Wellenlängenselektion welche in diesem Versuch untersucht
+werden, sind die Verwendung eines doppelbrechenden Kristalls oder eines Littrow- Prismas.
+Beide Methoden erlauben ein stufenloses Durchstimmen der Wellenlänge ohne Austausch optischer Elemente.\\
+
+Bei der Verwendung eines doppelbrechenden Kristalls wird dieser unter dem Brewsterwinkel verkippt zur optischen Achse in den Resonator gestellt. Der Brewsterwinkel dient dazu die Reflexionsverluste zu minimieren. Außerdem kann der Kristall um die optische Achse rotiert werden, sodass je nach Winkel die Polarisation bzw. Phase unterschiedlich stark verändert wird. Entspricht die Änderung der Phase bei zwei Durchläufen gerade einem Vielfachen der Wellenlänge, so überlagern sich die Strahlen konstruktiv, ansonsten destruktiv.
+Da die Änderung der Polarisation bzw. Phase abhängig von der Wellenlänge ist, lässt sich diese über den Winkel des Kristalls selektieren.\\
+
+Ein Littrow- Prisma ist so konstruiert, dass der einfallende Strahl, welcher gebrochen wird, senkrecht auf der reflektierenden Rückseite des Prismas auftrifft und dort in sich zurück reflektiert wird. Da die Brechung abhängig vom Winkel des auftreffenden Strahls sowie der Wellenlänge ist, lässt sich durch verkippen des Prismas zum Strahl genau eine Wellenlänge selektieren welche zurück in den Strahl reflektiert wird. Wird ein Resonatorspiegel durch ein Littrow- Prisma ersetzt lässt sich dadurch die Wellenlänge des Lasers durchstimmen.
+
+
+\begin{figure}[H]
+\begin{center}
+  \includegraphics[width=.7\textwidth]{Littrow.pdf}
+  \caption{Schematische Darstellung der Wellenlängenselektion mit einem Littrow- Prisma. Der grüne Strahl trifft senkrecht auf die reflektierende Rückseite des Prismas und wird zurück in den einfallenden schwarzen Strahl reflektiert.}
+  \label{img:littrow}
+\end{center}
+\end{figure}
+
 
 
 \subsection{Frequenzverdopplung}
 
-4. How does second harmonic generation work and why does it have a low
-efficiency?
+
+Frequenzverdopplung oder auch Verdreifachung ist ein nichtlinearer Prozess von Licht in Materie.
+Durchläuft Licht Materie, so werden die Elektronenhüllen aus ihrer Ruheposition ausgelenkt und fangen an zu schwingen. Für kleine Intensitäten ist diese Auslenkung näherungsweise harmonisch und
+die schwingenden Dipole erzeugen wiederum Licht der gleichen Wellenlänge.
+Wir die Intensität jedoch großer, so wird die Auslenkung stärker und die Elektronen wechselwirken zusätzlich mit Potentialen umliegender Kerne und die Auslenkung ist nicht mehr linear. 
+Die führt zu dazu, dass im abgestrahlten Licht der Dipole auch die höheren Harmonischen enthalten
+sind. Dieser Prozess ist zum einen Stark von der Intensität des einfallenden Lichts, aber auch
+vom Material abhängig. Die Terme höherer Ordnung der dielektrischen Suszeptibilität eines Materials, welche in der Regel deutlich kleiner als der lineare Term sind, bestimmen die Effektivität der Generierung Frequenzvervielfachter Strahlung.
+
 
 
 
